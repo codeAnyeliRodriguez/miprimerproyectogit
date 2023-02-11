@@ -5,6 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    h1{
+      color: gold;
+    }
+
+    h2{
+      color: yellow;
+    }
+    h4{
+      color: yellow;
+    }
+
+    li{
+      color: white;
+    }
+    p{
+      color: white;
+    }
+    a{
+      border: dotted green;
+    }
+  </style>
 </head>
 <body>
   <h1>comandos</h1>
@@ -45,6 +70,32 @@ git commit -m "primer commit"
 git log
 </li>
 </ol>
+
+<h2>or push(para subir a github)</h2>
+<ol>
+  <li>git remote add origin https://github.com/codeAnyeliRodriguez/miprimerproyectogit.git</li>
+  <li>git branch -M main</li>
+  <li>git push -u origin main</li>
+</ol>
+
+<h2>Trucos</h2>
+<ol>
+  <li>// Muestra en una línea los commit realizados<br>
+    git log --oneline</li>
+    <li>// Muestra en una línea los commit realizados pero más elegante<br>
+      git log --oneline --decorate --all --graph</li>
+   <li>
+    // Solo muestra los archivos modificados<br>
+git status -s
+   </li> 
+</ol>
   
+<h4>Diferencias entre -- y -</h4>
+<p>--decorate hace referencia a una palabra
+  -s hace referencia al comando o a varios comandos, -sa serían dos comandos diferentes</p>
+  <br>
+<p>// Vemos información de la rama maestra<br>
+  git status -s -b<br>
+  git status -sb //Hace lo mismo que el comando anterior</p>
 </body>
 </html>
